@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.section1 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    list-style: none;
+}
+
+.section1 li {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    color: white;
+}
+
+.one {
+    background-color: violet;
+    font-size: 25px;
+}
+
+.two {
+    background-color: blue;
+    font-size: 40px;
+}
+
+.three {
+    background-color: skyblue;
+    font-size: 35px;
+}
+
+/*
+display: flex || flex-inline;
+flex-direction: row || column || row-reverse || column-reverse;
+flex-wrap: wrap || nowrap || wrap-reverse;
+justify-content: flex-start || flex-end || center || space-between || space-around || space-evenly;
+align-items: flex-start || flex-end || center || stretch || baseline;
+align-items: flex-start || flex-end || center || stretch;
+*/
+
+/*
+flex-flow: {flex-direction} {flex-wrap};
+*/
