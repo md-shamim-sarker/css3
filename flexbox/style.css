@@ -13,16 +13,18 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    /* justify-content: space-evenly; */
-    align-content: flex-start;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    align-content: flex-end;
     list-style: none;
 }
 
 .section1 li {
-    /* width: 300px; */
-    /* height: 100px; */
+    width: 100px;
+    height: 100px;
     margin: 10px;
+    padding: 10px;
     color: white;
     font-size: 40px;
     background-color: blue;
@@ -30,48 +32,39 @@ body {
 
 li:nth-child(1) {
     background-color: red;
-    order: 2;
+    /* order: 2; */
     /* flex-grow: 1; */
 }
 
 li:nth-child(2) {
     background-color: rgb(95, 50, 50);
-    order: 1;
+    /* order: 1; */
     /* flex-grow: 1; */
 }
 
 li:nth-child(3) {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     /* flex-shrink: 0; */
     /* flex-basis: 200px; */
 }
 
-
 /*
+----------------------------
+display: flex || inline-flex;
+----------------------------
 The Flex Container Properties
 -----------------------------
-flex-direction || flex-wrap || flex-flow || justify-content || align-items || align-content
-*/
-
-/*
-display: flex || flex-inline;
 flex-direction: row || column || row-reverse || column-reverse;
 flex-wrap: wrap || nowrap || wrap-reverse;
-flex-flow: {flex-direction} {flex-wrap};
 justify-content: flex-start || flex-end || center || space-between || space-around || space-evenly;
 align-items: flex-start || flex-end || center || stretch || baseline;
-align-content: flex-start || flex-end || center || stretch; ******************************
-*/
-
-/*
+align-content: flex-start || flex-end || center || stretch;
+------------------------
 The Flex Item Properties
 ------------------------
-order || flex-grow || flex-shrink || flex-basis
-*/
-
-/*
 order: 0 || 1 || 2 || 3;
 flex-grow: 0 || 1;
 flex-shrink: 0 || 1;
-flex-basis: 
+flex-basis: 300px;
+------------------
 */
